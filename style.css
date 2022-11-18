@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --corprincipal :  rgb(26, 135, 224);
+    --corsecundaria : rgb(8, 101, 177);
+}
+
+header{
+    background-color: rgb(8, 101, 177);
+}
+
+body{
+    background-color: rgb(26, 135, 224);
+    font-family: 'Quicksand', sans-serif;
+}
+
+main{
+    margin-top: 100px;
+}
+
+input{
+    width: 40%;
+    height: 50px;
+    box-shadow: 1px 3px 5px 2px rgba(0, 0, 0, 0.479);
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    border-style: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: var(--corsecundaria) ;
+    bottom: 0%;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+
+.cabecalho h1{
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(2, 2, 2, 0.5);
+}
+
+.titulo{
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.486);
+}
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottomS{
+    background-color: rgb(8, 101, 177);
+    color: white;
+    font-size: 30px;
+    border-radius: 100px;
+    padding: 10px;
+    box-shadow: 1px 3px 5px 2px rgba(0, 0, 0, 0.479);
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-around;
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+
+.titulo h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
