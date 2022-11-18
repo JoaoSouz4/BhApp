@@ -7,6 +7,7 @@
     <title>BH Assistencia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animacoes.css">
+    <link rel="stylesheet" href="renderizacao.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -35,13 +36,21 @@
         <section class="pesquisa">
 
             <input type="text" class="barra-pesquisa" placeholder="Insira o nome da mercadoria">
-            <ion-icon name="search" class="bottomS"></ion-icon>
+            <div class="bP">
+                <ion-icon name="search" class="bottomS"></ion-icon>
+            </div>
 
         </section>  
 
-        <section class="container">
-            <h1>adads</h1>
+        <section class="resultado-container">
+            <div class="boxes">
+
+            </div>
         </section>
+
+        <button>Limpar Busca</button>
+
+
 
     
     </main>
@@ -49,5 +58,7 @@
    
     
 </body>
+<script src="BuscarMercadoria.js"></script>
+<script src="main.js"></script>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </html>

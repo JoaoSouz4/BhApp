@@ -13,10 +13,10 @@ bottomRegister.addEventListener('click', ()=>{
 
     const nome = inputNome.value;
     const tipo = inputTipo.value;
-    const qtd = inputQtd.value;
+    const qtd = Number(inputQtd.value);
     const marca = inputMarca.value;
-    const precoCusto = inputPrecoCusto.value;
-    const precoVenda = inputPrecoVenda.value;
+    const precoCusto = Number(inputPrecoCusto.value);
+    const precoVenda = Number(inputPrecoVenda.value);
 
     if(nome == ''){
         alert('Informe um nome válido');
@@ -35,9 +35,27 @@ bottomRegister.addEventListener('click', ()=>{
 
     alert(`${nome} cadastrado com sucesso`)
 
-    const objeto = new Mercadoria(nome, tipo, qtd, marca, precoCusto, precoVenda);
+    const objeto = new Mercadoria(nome, tipo,marca, precoCusto, precoVenda, qtd);
+    objeto.isDisponivel();
+    
     arrayProductRegister.push(objeto);
 
+    const arrayMercadoriaJSON = converterParaJSON(arrayProductRegister);
+    salvaLocalStore(arrayMercadoriaJSON);
+
     console.log(arrayProductRegister);
+
 });
+
+function converterParaJSON(array){
+
+    const objetosJson = JSON.stringify(array);
+     return objetosJson;
+}
+
+function salvaLocalStore(json){
+    localStorage.setItem('mercadorias', json);
+}
+
+
 

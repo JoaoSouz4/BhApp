@@ -138,17 +138,13 @@ footer{
     align-items: center;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.resultado-container{
     width: 50%;
     height: 70%;
     background-color: #ffff;
     padding: 20px;
     margin: 20px;
-    overflow: scroll;
-    overflow-x: hidden;
+
 }
 
 body::-webkit-scrollbar-thumb {
@@ -156,7 +152,18 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid orange;  /* creates padding around scroll thumb */
   }
+  button{
+    border-style: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.329);
+    color: white;
+    font-weight: bold;
+    background-color: var(--corternaria);
+    width: 15%;
+    height: 50px;
+    border-radius: 10px;
+  }
 
+  
 
 
 
