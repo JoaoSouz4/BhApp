@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Dancing+Script&family=Montserrat:wght@100;200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --corprincipal :  rgb(26, 135, 224);
+    --corsecundaria : rgb(8, 101, 177);
+    --corternaria: rgb(92, 241, 23);
+}
+
+header{
+    background-color: rgb(8, 101, 177);
+}
+
+body{
+    background-color: rgb(26, 135, 224);
+    font-family: 'Quicksand', sans-serif;
+}
+
+main{
+    margin: 150px;
+    margin-top: 100px;
+}
+
+input{
+    width: 300px;
+    height: 43px;
+    box-shadow: 1px 3px 5px 2px rgba(0, 0, 0, 0.479);
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    border-style: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    font-size: 17px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: var(--corsecundaria) ;
+    bottom: 0%;
+}
+
+select{
+    width: 300px;
+    height: 43px;
+    box-shadow: 1px 3px 5px 2px rgba(0, 0, 0, 0.479);
+    border-radius: 25px;
+    padding: 15px;
+    margin: 10px;
+    border-style: none;
+}
+.box label{
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.637);
+}
+.titulo-cadastro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 11px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.titulo-cadastro ion-icon{
+    font-size: 5vh;
+    color: var(--corternaria);
+}
+
+.titulo-cadastro div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-left: 1px solid rgba(0, 0, 0, 0.212);
+    padding-left: 12px;
+}
+
+.titulo-cadastro div h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.titulo-cadastro label{
+    padding: 0px;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+
+.cabecalho h1{
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(2, 2, 2, 0.5);
+}
+
+.logo h1{
+    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.logo h1 label{
+    font-weight: 600;
+}
+
+
+.titulo{
+    display: flex;
+    justify-content: space-around;
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+
+.secao-cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.box{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.sub-box{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 2px;
+}
+
+.btn-container{
+    margin: 25px;
+}
+
+
+
+.btn{
+    font-family: 'Raleway', sans-serif; 
+    background-color: var(--corternaria);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    width: 37vh;
+    height: 45px;
+    border-radius: 90px;
+    border-style: none;
+    box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.363);
+    font-size: 3.5vh;
+}
+
+.qtd{
+    width: 40%;
+}
+
+.sub-box select{
+    width: 30vh;
+}
+
+.input-marca{
+    width: 35VH;
+}
+
+.value{
+    width: 20vh;
+}
+
+label{
+    padding-left: 10px ;
+}

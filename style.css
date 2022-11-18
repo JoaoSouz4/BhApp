@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Dancing+Script&family=Montserrat:wght@100;200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 *{
     margin: 0px;
@@ -7,10 +9,11 @@
     text-decoration: none;
 }
 
-:root{
-    --corprincipal :  rgb(26, 135, 224);
-    --corsecundaria : rgb(8, 101, 177);
-}
+    :root{
+        --corprincipal :  rgb(26, 135, 224);
+        --corsecundaria : rgb(8, 101, 177);
+        --corternaria: rgb(92, 241, 23);
+    }
 
 header{
     background-color: rgb(8, 101, 177);
@@ -26,11 +29,11 @@ main{
 }
 
 input{
-    width: 40%;
-    height: 50px;
+    width: 300px;
+    height: 45px;
     box-shadow: 1px 3px 5px 2px rgba(0, 0, 0, 0.479);
     border-radius: 25px;
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
     border-style: none;
 }
@@ -43,9 +46,18 @@ nav{
 
 nav a{
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     padding: 5px;
     text-decoration: none;
+}
+
+main{
+    height: 80vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer{
@@ -60,7 +72,6 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
     padding: 10px;
     position: fixed;
     width: 100%;
@@ -73,25 +84,39 @@ footer{
     text-shadow: 1px 1px 2px rgba(2, 2, 2, 0.5);
 }
 
+.logo h1{
+    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.logo h1 label{
+    font-weight: 600;
+}
+
 .titulo{
-    font-size: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.486);
+    display: flex;
+    justify-content: space-around;
+    margin-top:10px;
+    margin-bottom: 20px;
 }
 .pesquisa{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
 
 .bottomS{
-    background-color: rgb(8, 101, 177);
-    color: white;
+    background-color: var(--corternaria);
+    color: #ffff;
     font-size: 30px;
+    font-weight: bold;
     border-radius: 100px;
     padding: 10px;
-    box-shadow: 1px 3px 5px 2px rgba(0, 0, 0, 0.479);
+    box-shadow: 1px 3px 5px 2px rgba(0, 0, 0, 0.288);
 }
 
 .titulo{
@@ -112,6 +137,25 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+    background-color: #ffff;
+    padding: 20px;
+    margin: 20px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
 
 
 

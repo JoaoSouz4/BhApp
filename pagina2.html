@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BH Assistencia</title>
+    <link rel="stylesheet" href="cadastrar.css">
+    <link rel="stylesheet" href="animacoes.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <h1><label for="">BH.</label>APP</h1>
+        </div>
+        <nav>
+            <a href="index.html">Estoque</a>
+            <a href="pagina2.html">Cadastrar Mercadoria</a>
+            <a href="#">Banco de dados</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="titulo-cadastro">
+
+           
+                <ion-icon name="cube"></ion-icon>
+            
+            <div>
+                <h1>Cadastro de Mercadorias</h1>
+                <label for="">Preencha os campos abaixo e
+                a seguir clique em cadastrar</label>
+            </div>
+        </section>
+        <section class="secao-cadastro">
+            <div class="box">
+
+                <div class="sub-box">
+                    <label for="">Nome da mercadoria</label>
+                    <input type="text" id="nome">
+                </div>
+
+                <div class="sub-box">
+                    <label for="">Tipo</label>
+                    <select name="" id="tipo">
+                        <option value="telaCelular">Tela de celular</option>
+                        <option value="PlacaCarga">Placa de Carga</option>
+                        <option value="Bateria">Bateria</option>
+                    </select>
+                </div>
+                
+                <div class="box">
+                    <div class="sub-box">
+                        <label for="">Quantidade</label>
+                        <input type="number" class="qtd" id="qtd">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="sub-box">
+                    <label for="">Marca</label>
+                    <input type="text" class="input-marca" id="marca">
+                </div>
+
+                <div class="box">
+                    <div class="sub-box">
+                        <label for="">Preço de Custo</label>
+                        <input type="number" class="value" id="pc">
+                    </div>
+    
+                    <div class="sub-box">
+                        <label for="">Preço para venda</label>
+                        <input type="number" class="value" id="pv">
+                    </div>
+                </div>
+            </div>
+
+           
+                <div class="btn-container">
+                    <button class="btn">Cadastrar</button>
+                </div>
+           
+        </section>
+    </main>
+
+   
+    
+</body>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="main.js"></script>
+<script src="classePrincipal.js"></script>
+</html>
