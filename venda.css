@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Dancing+Script&family=Montserrat:wght@100;200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+    :root{
+        --corprincipal :  rgb(26, 135, 224);
+        --corsecundaria : rgb(8, 101, 177);
+        --corternaria: rgb(92, 241, 23);
+    }
+
+header{
+    background-color: rgb(8, 101, 177);
+}
+
+body{
+    background-color: rgb(26, 135, 224);
+    font-family: 'Quicksand', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    margin-top: 100px;
+    padding: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    font-size: 17px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+
+.cabecalho h1{
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(2, 2, 2, 0.5);
+}
+
+.logo h1{
+    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.logo h1 label{
+    font-weight: 600;
+}
+
+
+
+.solicitacao{
+    width: 300px;
+    border-radius: 25px;
+    height: 50px;
+    padding: 10px;
+    border-style: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.432);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.box ion-icon{
+    font-size: 30px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.box h2{
+   color: white;
+   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.315);
+   font-size: 35px;
+}
+
+.box ion-icon{
+    color: var(--corternaria);
+    font-size: 35px;
+}
+
+.box p{
+    color: var(--corsecundaria);
+}
+
+.arrow{
+    color: var(--corsecundaria);
+    font-size: 40px;
+}
+
+.search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-pesquisa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+.area-texto{
+    text-align: center;
+    font-weight: bold;
+    width: 400px;
+}
+
+.box-pesquisa{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+.box-pesquisa ion-icon{
+    background-color: var(--corternaria);
+    color: #ffff;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 10px;
+    box-shadow: 1px 3px 5px 2px rgb(0 0 0 / 29%);
+}
+
+.container-resultado{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.315);
+    margin-top: 10px;
+    height: 200px;
+}
+
+.title h3{
+    border-left: 3px solid var(--corternaria);
+    padding-left: 3px;
+}
+
+.container-parametros{
+    background-color: white;
+    width: 500px;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.274);
+}
+
+.child-parametros{
+    margin-top: 10px;
+}
+
+.parametro input{
+    height: 30px;
+    padding: 10px;
+    width: 150px;
+    
+}   
+
+.parametro{
+  margin: 10px;
+}
+
+.btn-t{
+    margin-top: 20px;
+}
+
+.btn-t button{
+    border-style: none;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 10px;
+    height: 45px;
+    width: 250px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.363);
+    background-color: var(--corternaria);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.178);
+}
+
+.box-dados{
+    overflow: scroll;
+    overflow-x: hidden;
+}

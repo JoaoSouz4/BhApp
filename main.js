@@ -12,6 +12,7 @@ bottomRegister.addEventListener('click', ()=>{
     const inputPrecoVenda = document.querySelector('#pv');
 
     const nome = inputNome.value;
+    const nomeformatado = nome.replace(/\s/g, '');
     const tipo = inputTipo.value;
     const qtd = Number(inputQtd.value);
     const marca = inputMarca.value;
@@ -35,7 +36,8 @@ bottomRegister.addEventListener('click', ()=>{
 
     alert(`${nome} cadastrado com sucesso`)
 
-    const objeto = new Mercadoria(nome, tipo,marca, precoCusto, precoVenda, qtd);
+    const objeto = new Mercadoria(nomeformatado.toUpperCase(), tipo,marca.toUpperCase(), precoCusto, precoVenda, qtd);
+    
     objeto.isDisponivel();
     
     arrayProductRegister.push(objeto);

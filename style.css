@@ -147,11 +147,6 @@ footer{
 
 }
 
-body::-webkit-scrollbar-thumb {
-    background-color: blue;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid orange;  /* creates padding around scroll thumb */
-  }
   button{
     border-style: none;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.329);

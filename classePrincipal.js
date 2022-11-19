@@ -6,7 +6,7 @@ class Mercadoria{
         this.precoCusto = precoCusto;
         this.precoVenda = precoVenda;
         this.qtd = qtd;
-        this.status = false;
+        this.status = true;
     }
 
     isDisponivel = ()=>{
@@ -17,4 +17,14 @@ class Mercadoria{
             this.status = false;
         }
     }
+
+      formatar = (nome) =>{
+        this.nome = nome.replace(/\s/g, '')
+    }
+
+   venderProduto = (quantidade)=>{
+        this.qtd-= this.qtd;
+   }
+    
 }
+

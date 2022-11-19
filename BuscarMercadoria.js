@@ -1,50 +1,53 @@
 const botaoPesquisar = document.querySelector('.bP');
-const divResultado = document.querySelector('.resultado-container');
+
+let barraPesquisa = document.querySelector('.barra-pesquisa');
 const divBoxes = document.querySelector('.boxes');
 
 
 botaoPesquisar.addEventListener('click', ()=>{
 
-    let barraPesquisa = document.querySelector('.barra-pesquisa');
+    
     let pesquisaSolicitada = barraPesquisa.value;
-    pesquisa(pesquisaSolicitada);
-
+    let psm = pesquisaSolicitada.toUpperCase();
+    let pesquisaFormatada = psm.replace(/\s/g, '');
+    console.log(pesquisaFormatada);
+    pesquisa(pesquisaFormatada, divBoxes);
 
 });
 
-function pesquisa(pesquisa){
-
+function pesquisa(pesquisa, box){
 
     if(pesquisa == ''){
         alert('Preencha o campo abaixo para poder fazer a pesquisa');
-        return
+        return;
     } 
 
     let array = localStorage.getItem('mercadorias');
     let arrayLocalStore = JSON.parse(array);
-
-    console.log('ITERACAO');
-    console.log(arrayLocalStore)
-
+    let result;
+    let arrayEncontrado;
     for( let i in arrayLocalStore){
-        if(pesquisa == arrayLocalStore[i].nome){
-            
-            console.log(`${arrayLocalStore[i].nome} está em estoque!`);
-            renderizarInformacoes(arrayLocalStore[i]);
-            return;
+        if(arrayLocalStore[i].nome == pesquisa){
+
+            arrayEncontrado = arrayLocalStore[i];
+            renderizarInformacoes(arrayLocalStore[i], box);
+            result = true;
+            break;
         } else{
-            emFalta(pesquisa);
-            console.log(array[i].nome+' Não está em estoque :(');
-            return;
+            result = false;
         }
     }
+
+    if(result == false) emFalta(pesquisa);
+
+    return arrayEncontrado;
 }
 
-function renderizarInformacoes(array){
+function renderizarInformacoes(array, boxC){
 
     const box = criaElemento("div");
-    box.setAttribute("class", "box")
-    divBoxes.appendChild(box);
+    box.setAttribute("class", "box1")
+    boxC.appendChild(box);
 
     const subBox = criaElemento("div");
     subBox.setAttribute("class", "sub-box");
@@ -120,13 +123,14 @@ function renderizarInformacoes(array){
 }
 
 function emFalta(pesquisa){
-    divResultado.innerHTML = `${pesquisa} não está cadastrado`
+    alert(`${pesquisa} não está cadastrado`)
 }
 
 function criaElemento(el){
     const elemento = document.createElement(el)
     return elemento;
 }
+
 
 
 
